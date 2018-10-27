@@ -1,10 +1,16 @@
-# Sample requirements (toy blog)
+# Sample requirements — personal notes app
 
 ## Functional
-- [ ] FR-01 User can create a post
-- [ ] FR-02 User can list posts
-- [ ] FR-03 User can delete own post
+
+- [x] F1: User can create a note with title and body
+- [x] F2: User can list all notes
+- [ ] F3: User can search notes by keyword
+- [ ] F4: User can tag notes and filter by tag
+- [x] F5: User can delete a note
 
 ## Non-functional
-- [ ] NFR-01 Pages load under 2s on broadband
-- [ ] NFR-02 Passwords stored hashed
+
+- [ ] NF1: List endpoint responds in under 200ms at p95 for 10k notes
+- [x] NF2: Passwords stored with a slow hash (bcrypt/argon2)
+- [ ] NF3: TLS required in production
+- [ ] NF4: Daily automated backups of the datastore

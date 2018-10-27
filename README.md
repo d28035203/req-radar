@@ -1,12 +1,18 @@
 # Req Radar
 
-**Subject vibe:** Software Engineering — requirements as a checklist.
+Track functional and non-functional requirements as markdown checkboxes, with a small CLI for status and updates.
 
-Track functional vs non-functional notes for a toy system (markdown + simple CLI status).
+## Usage
 
 ```bash
 python3 radar.py list
-python3 radar.py done FR-01
+python3 radar.py status
+python3 radar.py done F3
+python3 radar.py undo NF1
 ```
 
-MIT · practice project
+Edit `requirements.md` directly or via the CLI. Sample set describes a personal notes app.
+
+## License
+
+MIT
